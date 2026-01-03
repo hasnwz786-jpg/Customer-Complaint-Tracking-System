@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+
+% ---------------- PACKAGES ----------------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\setstretch{1.5}
+\titleformat{\section}{\bfseries\large}{\thesection.}{1em}{}
+
+\begin{document}
+
+% ---------------- TITLE PAGE ----------------
+\begin{titlepage}
+\centering
+\vspace{1.5cm}
+
+{\Large \textbf{Term Project – Complex Engineering Activity (CEA)}}\\[0.4cm]
+{\large Application of Information and Communication Technologies (AICT)}\\
+Course Code: MCT-107L\\[1.2cm]
+
+{\Huge \textbf{Customer Complaint Tracking System}}\\[1cm]
+
+% ----------- UNIVERSITY LOGO (CENTER) ----------
+\includegraphics[width=0.25\textwidth]{uet_logo.png}\\[1cm]
+
+Semester: 1st\\
+Session: 2025\\[0.5cm]
+
+Instructor:\\
+Engr. Syed Muhammad Umer\\[0.5cm]
+
+\textbf{Submitted By:}\\
+HASSAN NAWAZ\\[0.3cm]
+\textbf{Registration No.:}\\
+2025-MCT-156\\[3cm]
+
+{\large \textbf{University of Engineering and Technology, Lahore (FC)}}\\
+
+\vfill
+\end{titlepage}
+
+% ---------------- INTRODUCTION ----------------
+\section{Introduction}
+Customer satisfaction is a key factor in the success of modern organizations. Inefficient handling of customer complaints leads to dissatisfaction and loss of trust. This project proposes an ICT-based Customer Complaint Tracking System to efficiently record, store, and analyze customer complaints using modern ICT tools.
+
+This project qualifies as a Complex Engineering Activity (CEA) as it integrates multiple tools, datasets, system workflows, and analytical techniques.
+
+% ---------------- PROBLEM DEFINITION ----------------
+\section{Problem Definition}
+Many organizations do not have a structured mechanism to manage customer complaints. Complaints are often handled manually, leading to delays and poor analysis. The objective of this project is to design a system that records complaints digitally and analyzes complaint trends using time-series simulation.
+
+% ---------------- LITERATURE REVIEW ----------------
+\section{Literature Review}
+Previous research indicates that automated complaint management systems improve service quality and customer satisfaction. Database-driven systems combined with data analysis tools help identify recurring issues. Time-series analysis is widely used to observe trends over time and support decision making.
+
+% ---------------- PROPOSED SYSTEM ----------------
+\section{Proposed System}
+The proposed system allows customers to submit complaints through Google Forms. The submitted data is stored in Google Sheets, where it is processed and analyzed. Administrators review the analyzed results to take corrective actions.
+
+The system uses Google Sheets for dataset creation, Canva for system visualization, DBMS concepts for database design, GitHub for version control, and Overleaf for documentation.
+
+% ---------------- DATASET AND ANALYSIS ----------------
+\section{Dataset and Analysis}
+A dataset was created in Google Sheets containing customer complaint records. Each record includes Complaint ID, Customer Name, Contact Number, Complaint Type, Complaint Description, Date of Complaint, and Complaint Priority.
+
+Time-series simulation was performed by calculating the total number of complaints per day using the COUNTIF formula. A line chart was created with dates on the X-axis and total complaints on the Y-axis. A linear trendline was added, and the R\textsuperscript{2} value was used to evaluate the accuracy of the simulation.
+
+% ---------------- DBMS SCHEMA ----------------
+\section{DBMS Schema}
+The database consists of two main tables: Customer and Complaint. The Customer table stores customer information, while the Complaint table stores complaint details. A foreign key relationship links complaints to customers. Sample SQL queries were written to analyze daily complaints and high-priority cases.
+
+% ---------------- SYSTEM FLOW DIAGRAM ----------------
+\section{System Flow Diagram}
+The system flow diagram illustrates the complete workflow of the Customer Complaint Tracking System.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{system_diagram.png}
+\caption{System Flow Diagram of Customer Complaint Tracking System}
+\label{fig:systemflow}
+\end{figure}
+
+% ---------------- RESULTS ----------------
+\section{Results}
+The system successfully records and analyzes customer complaints. The time-series analysis highlights complaint trends over time, enabling management to identify peak complaint periods and recurring issues. The trendline and R\textsuperscript{2} value indicate reliable analytical results.
+
+% ---------------- CONCLUSION ----------------
+\section{Conclusion}
+The Customer Complaint Tracking System provides an efficient and automated solution for managing customer complaints. By integrating multiple ICT tools and analytical techniques, the system improves transparency, responsiveness, and decision making. Future enhancements may include real-time dashboards and predictive analytics.
+
+% ---------------- REFERENCES ----------------
+\section{References}
+\begin{itemize}
+\item Google Sheets Help Documentation.
+\item MySQL Documentation.
+\end{itemize}
+
+\end{document}
